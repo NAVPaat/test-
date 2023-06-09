@@ -1,0 +1,236 @@
+<html>
+<head>
+</head>
+<body>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!----- NAVIGATION START ----->
+
+<div class="topnav">
+<a class="active" href="index.html"><img src="assets/picture/home.png" width="26px"></a>
+  <a href="about_me.html">ABOUT ME</a>
+  <a href="education.html">EDUCATION</a>
+  <a href="experience.html">EXPERIENCE</a>
+  <a href="family.html">FAMILY</a>
+  <a href="gallery.html">GALLERY</a>
+</div>
+
+
+<!----- NAVIGATION END ----->
+
+
+
+
+<!----- SLIDESHOW FOR PICTURE ----->
+
+
+  <div class="box">
+<center>
+<b><p style="color:#7EC8E3;">MY GALLERY</p></b>
+</center>  
+  </div>
+
+<br>
+
+<hr color="#05445E" size="5">
+
+<center>
+<h1 style="color: #189AB4; font-size: 20px;">MY RANDOM PHOTO GALLERY😉😉</h1> </center>
+
+<hr color="#05445E" size="5">
+
+
+<br>
+<br>
+
+<div class="slideshow-container">
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="assets/picture/pic_1.jpg" style="width:80%">
+</div> </center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="assets/picture/pic_6.jpg" style="width:80%">
+</div> </center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="assets/picture/pic_7.jpg" style="width:80%">
+</div></center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="assets/picture/pic_9.jpg" style="width:80%">
+</div></center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="assets/picture/pic_3.jpg" style="width:80%">
+</div></center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="assets/picture/pic_5.jpg" style="width:60%">
+</div></center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="assets/picture/pic_2.jpg" style="width:50%">
+</div></center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="assets/picture/pic_8.jpg" style="width:40%">
+</div></center>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br>
+<br>
+
+
+
+
+
+
+
+<!----- VIDEO ----->
+
+
+<hr color="#05445E" size="5">
+
+<center>
+<h1 style="color: #189AB4; font-size: 20px;">MY RANDOM VIDEO GALLERY😉😉</h1> </center>
+
+<hr color="#05445E" size="5">
+
+<br>
+<br>
+
+<center>
+<video width="30%" hight="40%" controls>
+  <source src="assets/video/vid-2.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+</video> </center>
+
+<br>
+<br>
+
+<center>
+  <video width="30%" hight="50%" autoplay controls>
+    <source src="assets/video/vid-1.mp4" type="video/mp4">
+  </video> </center>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<center>
+<img src="assets/picture/no.gif"  style="width:100	px;height:100px;"></a>
+</center>
+
+
+<!----- SOCIAL MEDIA ----->
+
+
+
+<center> 
+<h1 style="color: #189AB4; font-size: 15px;">MY SOCIAL MEDIA </h1> 
+</center>
+
+<center> 
+<p><a href="https://www.instagram.com/paatttt__/" target="_blank">
+  <img src="assets/picture/insta.png"  style="width:60	px;height:60px;"></a>
+
+<a href="https://www.pinterest.com/cactipaat/" target="_blank">
+  <img src="assets/picture/pinterest.png"  style="width:60	px;height:60px;"></a>
+
+<a href="https://www.tiktok.com/@sprinkle_water" target="_blank">
+  <img src="assets/picture/tt.png"  style="width:60	px;height:60px;"></a>
+
+</a></center> 
+
+
+
+
+<!----- END SOCIAL MEDIA ----->
+
+
+
+
+<!----- FOOTER ----->
+
+<center>
+<footer>
+<p>Copyright @ Rifaat</p>
+</footer> </center>
+
+
+
+</body>
+</html>

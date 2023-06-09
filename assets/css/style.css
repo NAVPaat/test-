@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+body {
+  background-color: #75E6DA;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #189AB4;
+  border: 5px solid #0E86D4;
+}
+
+.topnav a {
+  float: left;
+  color: #D4F1F4;
+  text-align: center;
+  padding: 40px 42px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #D4F1F4;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #05445E;
+  color: white;
+}
+
+
+footer {
+     
+  font-style: Arial, sans-serif;
+            background-color: #000000;
+            color: #444444;
+            padding: 20px;
+
+
+        }
+
+  
+
+{box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+<!----- PHOTO ----->
+
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery .photo {
+      width: 200px;
+      margin: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .gallery .photo img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+
+    #fullscreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+
+    #fullscreen.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #fullscreen img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .box {
+      padding: 20px;
+      background-color: #0E86D4;
+      border: 5px solid #055C9D;
+      font-size: 25px
+  
+    }
+
